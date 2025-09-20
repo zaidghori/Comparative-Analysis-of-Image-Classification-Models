@@ -5,7 +5,7 @@ from itertools import product
 import time
 
 from data_handler import DataHandler
-from models import MLPModel, VGG16, PretrainedVGG16
+from Models import MLPModel, VGG16, PretrainedVGG16
 from trainer import Trainer
 
 
@@ -91,7 +91,7 @@ def search_vgg16_hyperparameters(data_dir, img_size=128, device='cuda'):
     dropouts = [0.5, 0.3]
     batch_sizes = [64]
     
-        search_space = list(product(learning_rates, dropouts, batch_sizes))
+    search_space = list(product(learning_rates, dropouts, batch_sizes))
     results = []
     
     for lr, dropout, batch_size in search_space:
