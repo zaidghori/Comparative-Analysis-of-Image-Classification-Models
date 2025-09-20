@@ -271,7 +271,7 @@ def main():
     if args.model == 'mlp' or args.model == 'all':
         train_mlp(args.data_dir, device, args.search_hyperparameters)
     
-        if args.model == 'vgg16' or args.model == 'all':
+    if args.model == 'vgg16' or args.model == 'all':
         train_vgg16(args.data_dir, device, args.search_hyperparameters)
     
     if args.model == 'pretrained_vgg16' or args.model == 'all':
