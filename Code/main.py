@@ -5,7 +5,7 @@ import torch.nn as nn
 import torch.optim as optim
 
 from data_handler import DataHandler
-from models import MLPModel, VGG16, PretrainedVGG16
+from Models import MLPModel, VGG16, PretrainedVGG16
 from trainer import Trainer
 from hyperparameter_search import (
     search_mlp_hyperparameters,
